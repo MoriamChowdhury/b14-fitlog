@@ -5,6 +5,7 @@ import { PlanProvider } from "@/context/PlanContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <PlanProvider>
           <Navbar />
           <main className="flex-1">{children}</main>
+           <Footer />
           <ToastContainer
             position="bottom-right"
             theme="dark"
