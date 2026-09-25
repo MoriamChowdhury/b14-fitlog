@@ -3,19 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { usePlan } from "@/context/PlanContext";
 
 const NAV_LINKS = [
     { label: "Workouts", href: "/" },
     { label: "My Plan", href: "/my-plan" },
 ];
 
-interface NavbarProps {
-    planCount?: number;
-    savedCount?: number;
-}
 
-export default function Navbar({ planCount = 0, savedCount = 0 }: NavbarProps) {
-    const pathname = usePathname();
+
+export default function Navbar() {
+  const pathname = usePathname();
+  const { plan, saved } = usePlan();
+  const planCount = plan.length;
+  const savedCount = saved.length;
 
     return (
         <header className="sticky top-0 z-50 border-b border-surface-border bg-background/95 backdrop-blur">
