@@ -4,7 +4,7 @@ FitLog is a dark, no-nonsense gym companion built with Next.js. Browse a library
 
 ## 🔗 Links
 
-- **Live Site:  b14-fitlog-2tj0og4nc-moriam-projects.vercel.app
+- **Live Site:  https://b14-fitlog-l2mvmvsva-moriam-projects.vercel.app/my-plan
 - **GitHub Repository:  https://github.com/MoriamChowdhury/b14-fitlog
 
 ## 🛠️ Technologies Used
