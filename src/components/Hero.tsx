@@ -20,10 +20,10 @@ export default function Hero() {
               up.
             </p>
             <a
-              href="#library"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-opacity hover:opacity-90"
-            
-              >
+             
+  href="#library"
+  className="mt-8 inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-opacity hover:opacity-90"
+>
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -42,7 +42,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="relative w-full max-w-sm shrink-0 md:ml-auto md:h-[336px] md:w-[252px] md:max-w-none">
+          <div className="relative aspect-[3/4] w-full max-w-sm shrink-0 md:aspect-auto md:ml-auto md:h-[336px] md:w-[252px] md:max-w-none">
             <Image
               src="/banner.png"
               alt="Workout illustration"

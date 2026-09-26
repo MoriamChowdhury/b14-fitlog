@@ -59,18 +59,19 @@ export default async function WorkoutDetailPage({ params }: PageProps) {
             ))}
           </div>
 
-          <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 rounded-2xl border border-surface-border bg-surface p-6 sm:grid-cols-3">
-            {specs.map((spec) => (
-              <div key={spec.label}>
-                <dt className="text-xs uppercase tracking-wide text-muted">
-                  {spec.label}
-                </dt>
-                <dd className="mt-1 font-display text-sm font-semibold">
-                  {spec.value}
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <dl className="mt-8 divide-y divide-surface-border rounded-2xl border border-surface-border bg-surface px-6">
+  {specs.map((spec) => (
+    <div
+      key={spec.label}
+      className="flex items-center justify-between py-4"
+    >
+      <dt className="text-xs font-medium uppercase tracking-wide text-muted">
+        {spec.label}
+      </dt>
+      <dd className="text-sm font-medium">{spec.value}</dd>
+    </div>
+  ))}
+</dl>
 
           <div className="mt-8">
             <h2 className="font-display text-lg font-semibold uppercase tracking-wide">
